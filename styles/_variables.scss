@@ -1,0 +1,65 @@
+//BACKGROUND COLORS
+//yellow
+$accentColor1A: #FBCF61; //left side of split background
+$accentColor1B: #F3C95E; //right side of split background
+
+//Don't think we need this
+//$accentColor1C: #fbd061; //Address background
+
+//red
+$accentColor2A: #FF6F6F;
+$accentColor2B: #F76C6C;
+
+//green
+$accentColor3A: #A8D164;
+$accentColor3B: #A3CA61;
+
+//White
+$contrastColorA: #FFF;
+$contrastColorB: #FAFAFA;
+//--Right side of top bar (slightly darker white)  //--Footer background
+
+//Grey
+$bgColorA: #313131;
+//about us background
+//projects background
+//portfolio background (top and bottom)
+
+$bgColorB:#3c3c3c;
+//about us card backgrounde
+
+$bgColorC:#1f1f1f;
+//skills
+// team bg
+// blog bg
+// contact bg
+// copyright bg
+
+$bgColorD: #2b2b2b;
+// team card bg
+// blog post bg
+// contact form feild bg
+
+
+//TEXT COLORS
+
+//GREY
+$textColorC: #343434; //Main Headers, nav links
+$textColorB: #989898; //--Paragraph immediately under section headings
+//--contact form placeholders
+//--light grey text in footer
+//-copyright text except for white DX Templates text
+
+$textColorC: #242424; //subheadings in footer recent posts column
+
+//WHITE
+$textContrast: #FFF; //White text
+
+//PINK
+$textAccent: #FD7070; // active link
+
+
+
+//BREAKPOINTS
+$mobile:"max-width:550px";
+$tablet:"max-width:850px";

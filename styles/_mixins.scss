@@ -1,0 +1,14 @@
+$mobile:"max-width:450px";
+$tablet:"max-width:900px";
+
+
+@mixin mediaQ($point) {
+
+	@if $point == $mobile {
+		@media ($mobile) { @content; }
+	}
+
+	@else if $point == $tablet {
+		@media ($tablet) { @content; }
+	}
+ }

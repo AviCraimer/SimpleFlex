@@ -1,0 +1,61 @@
+//for development
+section, aside {
+  min-height: 300px;//remove
+  border: 1px solid rgb(66, 206, 241);
+}
+
+
+//BACKGROUND COLORS
+.header {
+  &__top-bar {
+    &__h1 {
+      background-color: $contrastColorA;
+    }
+    &__nav {
+      background-color: $contrastColorB;
+    }
+  }//top-bar
+}//header
+
+.header__slider__slide1, .address  {
+  background: linear-gradient(to right, $accentColor1A 50%, $accentColor1B 50%);
+}
+
+.header__slider__slide2, .quote {
+  background: linear-gradient(to right, $accentColor2A 50%, $accentColor2B 50%);
+
+}
+
+.header__slider__slide3, .facts {
+  background: linear-gradient(to right, $accentColor3A 50%, $accentColor3B 50%);
+}
+
+
+.quote {
+  background-color:  $accentColor2B;
+}
+
+.about, .projects, .portfolio {
+  background-color: $bgColorA;
+}
+
+.about__card  {
+  background-color: $bgColorB;
+
+}
+
+.skills, .team, .blog, .contact, .main-footer__copyright  {
+  background-color: $bgColorC;
+}
+
+.team__card, .blog__card, .contact input, .contact textarea {
+  background-color: $bgColorD;
+
+}
+
+
+//TEXT COLORS
+
+
+//OTHER COLORS
+
