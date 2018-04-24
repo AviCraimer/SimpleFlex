@@ -8,6 +8,10 @@
 	@else if $point == $tablet {
 		@media ($tablet) { @content; }
 	}
+
+  @else if $point == $laptop {
+		@media ($laptop) { @content; }
+	}
  }
 
 //Modifeid from this article: https://engageinteractive.co.uk/blog/top-10-scss-mixins

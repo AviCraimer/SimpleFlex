@@ -28,19 +28,62 @@
 
     }//slide
     &__slide1 {
+      display: grid;
+      grid-template-rows:
+        152fr
+        87fr
+        449fr
+        112fr
+        ;
 
-      &__content {
-        padding-top: 12.4%;;
-        h2, p {
-        margin-left: 20vw;
-        width: 27vw;
-        }
+      grid-template-columns:
+        minmax(40px, 375fr)
+        444px //text
+        56px //overlap
+        752px //phone image
+        minmax(40px, 293fr)
+        ;
+      @include mediaQ($laptop) {
+        grid-template-columns:
+        minmax(40px, 375fr)
+        //Scale down text and imagec cols  by 0.625
+        278px //text
+        56px //overlap
+        470px //phone image
+        minmax(40px, 293fr)
+        ;
       }
-      &__imgCol div {
-        width: 84%;
-        margin-top: 16%;
-        transform: translateX(-5vw);
-      }//slide1__imgCol
+
+      @include mediaQ($tablet) {
+        //Switching to flex will also help with support since mobile browsers may not support grid.
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px;
+      }
+
+      &__left {
+        grid-area: 3 / 2 / 4 / 4;
+      }
+
+      &__right { //PHONE IMAGE
+          grid-area: 2 / 3 / 4 / 5;
+      }
+
+      h2, p {
+        margin-top: 0;
+      }
+
+      h2 {
+        @include mediaQ($laptop) {
+          font-size: 5rem;
+        }
+        margin-bottom: 40px;
+      }
+
+      p {
+        grid-area: 5 / 2 / 6 / 3;
+        margin-bottom: 56px;
+      }
     }//slide1
   }//slider
 

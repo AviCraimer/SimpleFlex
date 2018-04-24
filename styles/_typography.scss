@@ -38,13 +38,14 @@ h3 {
 }
 
 .header__slider h2 {
-  @include type(8,$textColorA, 700, 0.8, false, true);
+  @include type(8,$textColorA, 700, 0.8, left, true);
   span {
     @include type(false,$textContrast, 300);
+    display: block;
   }
 }
 .header__slider p {
-  @include type(2,$textColorA, 300, 1.5);
+  @include type(2,$textColorA, 300, 1.5, left);
 }
 
 .button1 {
