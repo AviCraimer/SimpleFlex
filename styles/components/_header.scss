@@ -1,4 +1,22 @@
+// HEADER TYPOGRAPHY
+
+.header__top-bar__nav a {
+  @include type(1.3,$textColorA,300,5);
+}
+
+.header__slider h2 {
+  @include type(8,$textColorA, 700, 0.8, left, true);
+  span {
+    @include type(false,$textContrast, 300);
+    display: block;
+  }
+}
+.header__slider p {
+  @include type(2,$textColorA, 300, 1.5, left);
+}
+
 .header {
+  // TOP BAR MENU AND LOGO
    &__top-bar {
     display: flex;
     &__h1 {
@@ -12,7 +30,7 @@
       width: 182px;
      }
     }
-
+    // MAIN NAVIGATION
     &__nav {
       width: 50%;
       display: flex;
@@ -38,14 +56,15 @@
             top: 126px;
             flex-direction: column;
             background-color:$contrastColorB;
-            width: 100%;
+            width: 150%; //Make sure this doesn't cause overflow on phone
+            border-radius: 0 6px ;
           }
         }//ul
         @include mediaQ($mobile) {
-          justify-content: flex-end;
+          justify-content: center;
           width: 40%;
           background-color: $contrastColorA;
-          &:hover {
+          &:hover { //start nav:hover
             ul {
             display: block;
             }
@@ -53,7 +72,9 @@
         }//nav mediaQ
       } //__nav
     }//__top-bar
-  &__slider {
+
+  // HEADER SLIDES
+    &__slider {
     &__slide {
 
       display: flex;
@@ -123,7 +144,6 @@
       }
     }//slide1
   }//slider
-
 }//.header
 
 

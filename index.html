@@ -84,18 +84,28 @@
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fugit.</p>
           <div class="wrapper about__content
           flex-container flex-container--3cols">
-            <div class="about__card card">
+            <div class="about__card about__card1 ">
+
+              <div>
+                <img src="assets/about-1.png" alt="" aria-hidden="true" >
+              </div>
               <h3>Modern</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quo.</p>
 
             </div>
-            <div class="about__card card">
-               <h3>Simple</h3>
+            <div class="about__card about__card2 ">
+              <div>
+                <img src="assets/about-2.png" alt="" aria-hidden="true" >
+              </div>
+              <h3>Simple</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quo.</p>
 
             </div>
-            <div class="about__card card">
-               <h3>Flexible</h3>
+            <div class="about__card about__card3 ">
+              <div>
+                <img src="assets/about-3.png" alt="" aria-hidden="true" >
+              </div>
+              <h3>Flexible</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quo.</p>
 
             </div>
@@ -104,29 +114,29 @@
       <section class="skills">
             <h2>Our Skills</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fugit.</p>
-          <div class="wrapper skills__content content flex-container flex-container--4cols">
-            <div class="skills__card card">
+          <div class="wrapper skills__content flex-container flex-container--4cols">
+            <div class="skills__card">
               <div class="imgWrap">
                 <img src="assets/circle-1.png" alt="75">
               </div>
               <h3>Web Design</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, in.</p>
             </div>
-            <div class="skills__card card">
+            <div class="skills__card">
               <div class="imgWrap">
                   <img src="assets/circle-2.png" alt="62">
               </div>
               <h3>WordPress</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, in.</p>
             </div>
-            <div class="skills__card card">
+            <div class="skills__card">
               <div class="imgWrap">
                 <img src="assets/circle-3.png" alt="57">
               </div>
               <h3>jQuery</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, in.</p>
             </div>
-            <div class="skills__card card">
+            <div class="skills__card">
               <div class="imgWrap">
                 <img src="assets/circle-4.png" alt="87">
               </div>
@@ -137,18 +147,21 @@
       </section>
       <aside class="quote">
         <blockquote>
-          <p class="quote__quote-text" >Design to express, not to impress.</p>
+          <p class="quote__quote-text" >Design to express, <span>not to impress.</span></p>
           <p class="quote__attribution">- John Tanedo -</p>
         </blockquote>
       </aside>
       <section class="projects">
         <h2>Latest Projects</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, accusantium. </p>
-        <div class="project__content">
+        <div class="projects__content">
           <img src="assets/mockup-2.png" alt="A man with glasses, thinking while touching his temples">
-          <div class="project__content__arrow-left"></div>
-          <div class="project__content__arrow-right"></div>
-        </div>
+          <a href="#" class="projects__content__arrow-left">
+            <i class="fas fa-angle-left"></i>
+          </a>
+          <a href="#" class="projects__content__arrow-right">
+            <i class="fas fa-angle-right"></i>
+          </a>
       </section>
       <section class="team">
         <h2>Meet the Team</h2>
@@ -256,7 +269,7 @@
             </figcaption>
           </figure>
         </div><!-- END OF GALLERY -->
-        <a class="button1" href="#">Load More</a>
+        <a class="button2" href="#">Load More</a>
       </section>
       <!-- END OF PORTFOLIO -->
       <!-- BLOG SECTION -->
@@ -291,7 +304,7 @@
               </figcaption>
             </figure>
           </div> <!-- END OF BLOG CONTENT -->
-          <a href="#" class="button1">View All</a>
+          <a href="#" class="button2">View All</a>
         </div> <!-- END OF WRAPPER -->
       </section>
       <!-- END OF BLOG -->
@@ -314,30 +327,64 @@
             <input type="text" placeholder="Name">
             <input type="email" placeholder="Email">
             <textarea name="" id="" cols="30" rows="10">Message</textarea>
-            <input class="button1" type="submit" value="Send">
+            <input class="button2" type="submit" value="Send">
           </form>
         </div>
       </section>
     </main>
     <footer class="footer">
       <section class="footer__content flex-container flex-container--4cols">
-        <div class="footer__card">
-
+        <div class="footer__card footer__card1 ">
+          <h4>Text Widget</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus nostrum quis omnis adipisci consectetur error maxime temporibus ipsa eos accusantium.</p>
         </div>
-        <div class="footer__card">
-
+        <div class="footer__card footer__card2 ">
+          <h4>Recent Posts</h4>
+          <div class="clearfix">
+            <a href="#" class="imgWrap" >
+              <img src="assets/footer-1.png" alt="graffiti houses">
+            </a>
+            <a href="#">
+              <h5>Lorem ipsum dolor sit amet.</h5>
+            </a>
+            <p>Dec 21, 2018</p>
+          </div>
+          <div class="clearfix">
+            <a href="#" class="imgWrap" >
+              <img src="assets/footer-2.png" alt="A graffiti sign">
+            </a>
+            <a href="#">
+              <h5>Vero sed ducimus cupiditate aut.</h5>
+            </a>
+            <p>Dec 22, 2018</p>
+          </div>
+          <div class="clearfix">
+            <a href="#" class="imgWrap" >
+              <img src="assets/footer-3.png" alt="Abstract square pattern">
+            </a>
+            <a href="#">
+              <h5>Minima optio ducimus molestiae qui!</h5>
+            </a>
+            <p>Dec 23, 2018</p>
+          </div>
         </div>
-        <div class="footer__card">
-
+        <div class="footer__card footer__card3 ">
+          <h4>Our Newsletter</h4>
+          <p>Please, subscribe to our latest news to be updated</p>
+          <form action="">
+            <input type="email">
+            <input type="submit" value="send" class="button3" >
+          </form>
         </div>
-        <div class="footer__card">
-
-        </div>
+        <div class="footer__card footer__card4 ">
+          <h4>Flickr Widget</h4>
+          <a href="#">
+            <img src="assets/footer-4.png" alt="Six images from our Flickr Feed">
+          </a>
       </section>
-      <aside class="main-footer__copyright">
-
+      <aside class="footer__copyright">
+        <p>&copy; Copyright 2014. Simpleflex Template by <a href="#">DX Templates</a></p>
       </aside>
-
     </footer>
 
 

@@ -1,0 +1,24 @@
+.about {
+
+  &__card {
+    padding: 60px 42px;
+    border-bottom: 10px solid;
+    > div { //icon image
+      width: 30%;
+      margin: auto;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &__card1 {
+    border-bottom-color:$accentColor1B;
+  }
+  &__card2 {
+    border-bottom-color:$accentColor2B;
+  }
+  &__card3 {
+    border-bottom-color:$accentColor3B;
+  }
+
+}

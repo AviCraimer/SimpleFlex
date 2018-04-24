@@ -4,20 +4,21 @@
 
 //THREE TO ONE COLUMN RESPOSIVE LAYOUT
   &--3cols {
-    > * {
+    > * { //select all flex chilren
       flex: 1 0 26%;
       &:not(:last-child) {
         margin-right: 30px;
-        @include mediaQ($mobile) {
+        @include mediaQ($tablet) {
           margin-bottom: 30px;
         }
       }
-      @include mediaQ($mobile) {
+      @include mediaQ($tablet) {
         flex-basis: 90%;
       }
-    }//>div, >figure
-    .card {
-      @include mediaQ($mobile){
+    }//flex children
+
+    .about__card {
+      @include mediaQ($tablet){
         margin-right: 0;
       }
     }

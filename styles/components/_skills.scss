@@ -1,0 +1,11 @@
+.skills {
+  &__card {
+    > div {
+      width: 48%;
+      margin: auto;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

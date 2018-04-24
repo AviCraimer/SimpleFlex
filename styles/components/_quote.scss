@@ -1,0 +1,58 @@
+.quote {
+  padding: 150px 0;
+  &__quote-text {
+    position: relative;
+    width: 721px;
+    @include mediaQ($tablet) {
+      width: 480px;
+    }
+    @include mediaQ($mobile) {
+      width: 100%;
+      padding:0 20px;
+    }
+    margin: 0 auto 26px auto ;
+    @include type(6, $textColorA, 700, 0.9, center);
+
+    &::before, &::after {
+      position: absolute;
+      top: -23px;
+      @include type(14, $textContrast,700);
+      @include mediaQ($tablet) {
+        font-size: 9rem;
+      }
+      @include mediaQ($mobile) {
+        font-size: 6rem;
+      }
+    }
+    &::after {
+      content:"”";
+      right: 0;
+    }
+    &::before {
+      content:"“";
+      left: 0;
+    }
+
+    span {
+      display: block;
+    }
+    @include mediaQ($tablet) {
+      font-size: 4rem;
+    }
+    @include mediaQ($mobile) {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+  }//quote-text
+
+  &__attribution {
+    margin: 0;
+    @include type(4, $textContrast, 300, 1.4, center);
+    @include mediaQ($tablet) {
+      font-size: 2.6rem;
+    }
+    @include mediaQ($mobile) {
+      font-size: 2.2rem;
+    }
+  }
+}

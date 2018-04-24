@@ -1,3 +1,69 @@
+// GLOBAL TYPOGRAPHY STYLES
+
+html {
+  font-size: 62.5%;
+}
+
+body, a, h1, h2, h3, h4, h5, h6, input, textarea  {
+  font-family: $mainFont;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  @include type(6, $textContrast, 300, 1, center, true);
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+section p {
+  @include type(1.6, $textColorB, 300, 1.5, center);
+  margin-top: 0;
+}
+
+section > p {
+  @include type(2.4, $textColorB, 300, 1.5, center);
+  padding-bottom: 36px;
+  margin-bottom: 51px;
+  position: relative;
+  &::after {
+    content: "";
+    border-bottom: 1px solid $bgColorE ;
+    width: 170px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 170px / 2);
+  }
+}
+
+h3 {
+  @include type(2.4,$textContrast, 700, 1.25, center);
+  margin: 29px 0;
+}
+
+.button1 {
+  @include type(1.2, $textColorA, 700, false, center, true);
+  padding: 1.3em;
+  border: 2px solid $textContrast;
+}
+
+.button2 { //white text
+  @extend .button1;
+  color: $textContrast;
+}
+
+.button3 { //red button
+  @extend .button1;
+  color: $textAccent;
+  border-color: $textAccent;
+}
+
+
+
+//GLOBAL ELEMENT STYLES
 img {
   width: 100%;
 }
@@ -14,5 +80,12 @@ img {
     width: 90%;
   }
 }
+
+main {
+  section {
+    padding: 100px 0;
+  }
+}
+
 
 

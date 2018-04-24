@@ -1,10 +1,3 @@
-//for development
-section, aside {
-  min-height: 300px;//remove
-  border: 1px solid rgb(66, 206, 241);
-}
-
-
 //BACKGROUND COLORS
 .header {
   &__top-bar {
@@ -13,7 +6,7 @@ section, aside {
     }
     &__nav {
       background-color: $contrastColorB;
-      // background-color: grey;
+
     }
   }//top-bar
 }//header
@@ -45,7 +38,7 @@ section, aside {
 
 }
 
-.skills, .team, .blog, .contact, .main-footer__copyright  {
+.skills, .team, .blog, .contact, .footer__copyright  {
   background-color: $bgColorC;
 }
 
@@ -55,8 +48,4 @@ section, aside {
 }
 
 
-//TEXT COLORS
-
-
-//OTHER COLORS
 
