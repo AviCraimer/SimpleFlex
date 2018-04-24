@@ -1,0 +1,154 @@
+//Order Of Typography Mixin Arguments:
+//font-size, colour, font-weight, line-height, text-align, text-transform: uppercase
+
+
+// GLOBAL TYPOGRAPHY
+
+html {
+  font-size: 62.5%;
+}
+
+body, a, h1, h2, h3, h4, h5, h6, input, textarea  {
+  font-family: $mainFont;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  @include type(6, $textContrast, 300, 1, center, true);
+}
+
+section p {
+  @include type(1.6, $textColorB, 300, 1.5, center);
+}
+
+section > p {
+  @include type(2.4, $textColorB, 300, 1.5, center);
+}
+
+h3 {
+  @include type(2.4,$textContrast, 700, 1.25, center);
+}
+
+.header__top-bar__nav a {
+  @include type(1.3,$textColorA,300,5);
+}
+
+.header__slider h2 {
+  @include type(8,$textColorA, 700, 0.8, false, true);
+  span {
+    @include type(false,$textContrast, 300);
+  }
+}
+.header__slider p {
+  @include type(2,$textColorA, 300, 1.5);
+}
+
+.button1 {
+  @include type(1.2, $textColorA, 700, false, center, true);
+  padding: 1.3em;
+  border: 2px solid $textContrast;
+}
+
+.quote {
+  &__quote-text {
+    @include type(6, $textColorA, 700, 0.9, center);
+    &::after {
+      content:"”" ;
+    }
+    &::before {
+      content:"“";
+    }
+
+    &::before, &::after {
+      @include type(14, $textContrast,700);
+
+    }
+  }
+
+  &__attribution {
+    @include type(4, $textContrast, 300, 1.4, center);
+  }
+}
+
+.facts {
+  h3 {
+    font-family: $numberFont;
+    @include type(6, $textColorA, 700, 0.9, center);
+  }
+}
+
+.portfolio {
+  &__nav a, h4 a  {
+    @include type(1.2, $textContrast, 700, 2.5, center, true);
+  }
+  &__gallery__card {
+    h4 {
+      text-align: center;
+      a {
+        color:  $textColorA;
+      }
+    }
+  }
+  & > a { //Load More Button
+    color:  $textContrast;
+  }
+}
+
+.blog {
+  h4 {
+    @include type(2.4, $textContrast, 700, 1.25, center);
+  }
+  h5 {
+    font-family: $numberFont;
+    @include type(1.2, $textContrast, 700, 2, center);
+  }
+  p {
+    @include type (1.6, $textColorB, 300, 1.5, center);
+  }
+  .button1 {
+    color: $textContrast;
+  }
+}
+
+
+.address {
+
+  p {
+    font-family: $numberFont;
+    font-style: normal;
+  }
+
+  &__info__phone {
+    @include type(4, $textContrast, 700, 1.4, center);
+  }
+  &__info__email {
+    @include type(8, $textColorA, 700, 0.7, center);
+
+  }
+  &__info__street {
+    @include type(3, $textColorB, 300, 1.8, center);
+  }
+}
+
+.contact {
+  input, textarea {
+    @include type(1.6, $textColorB, 300, 1.9, center)
+  }
+  .button1 {
+    color: $textContrast;
+  }
+}
+
+.footer {
+  &__content {
+
+  }
+
+  &__copyright {
+
+  }
+}

@@ -1,5 +1,5 @@
 .header {
-  &__top-bar {
+   &__top-bar {
     display: flex;
     &__h1 {
       width: 50%;
@@ -25,10 +25,7 @@
         // flex-grow: 1;
         // flex-shrink:0;
       }
-      &__content {
-        // width: 50%;
 
-      }//content
     }//slide
     &__slide1 {
 
@@ -36,7 +33,7 @@
         padding-top: 12.4%;;
         h2, p {
         margin-left: 20vw;
-        width: 26vw;
+        width: 27vw;
         }
       }
       &__imgCol div {
@@ -48,6 +45,26 @@
   }//slider
 
 }//.header
+
+@media ($mobile) {
+  .header__slider__slide {
+    flex-direction: column-reverse;
+    &__imgCol {
+      transform: none;
+      padding: 5%;
+      div {
+        // display: contents;
+      }
+    }
+    &__content {
+      p, h2 {
+        width: 100%;
+        margin: 0;
+        padding: 5%;
+      }
+    }
+  }
+}
 
 
 

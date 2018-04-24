@@ -10,6 +10,9 @@ img {
   width: 70%;
   max-width: 1170px;
   margin: auto;
+  @include mediaQ($tablet) {
+    width: 90%;
+  }
 }
 
 

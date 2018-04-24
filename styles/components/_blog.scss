@@ -1,0 +1,28 @@
+//BLOG GRID LAYOUT
+.blog__content {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns:1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  @include mediaQ($mobile) {
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.blog__card {
+  display: flex;
+  @include mediaQ($mobile) {
+    flex-direction: column;
+  }
+}
+
+.blog__card:first-child {
+  grid-row: span 2;
+  flex-direction: column;
+  @include mediaQ($mobile) {
+    grid-row: span 1;
+  }
+}
+
+

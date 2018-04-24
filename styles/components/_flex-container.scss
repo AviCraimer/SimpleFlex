@@ -1,0 +1,57 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+//THREE TO ONE COLUMN RESPOSIVE LAYOUT
+  &--3cols {
+    > * {
+      flex: 1 0 26%;
+      &:not(:last-child) {
+        margin-right: 30px;
+        @include mediaQ($mobile) {
+          margin-bottom: 30px;
+        }
+      }
+      @include mediaQ($mobile) {
+        flex-basis: 90%;
+      }
+    }//>div, >figure
+    .card {
+      @include mediaQ($mobile){
+        margin-right: 0;
+      }
+    }
+  }//3cols
+
+  //FOUR-TWO-ONE COLUMN RESPONSIVE LAYOUT
+  &--4cols {
+    > * {
+      flex: 1 0 21%;
+      &:not(:last-child) {
+        margin-right: 30px;
+        @include mediaQ($mobile) {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+      &:nth-child(2) { //remove margin from 2nd card
+        @include mediaQ($tablet) {
+          margin-right: 0;
+        }
+      }
+      &:nth-child(-n+2) { //Select first two cards
+        @include mediaQ($tablet) {
+          margin-bottom: 30px;
+        }
+      }
+
+      @include mediaQ($tablet) {
+        flex-basis: 40%;
+      }
+      @include mediaQ($mobile) {
+        flex-basis: 90%;
+      }
+
+    }
+  }
+}

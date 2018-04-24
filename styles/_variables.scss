@@ -44,7 +44,7 @@ $bgColorD: #2b2b2b;
 //TEXT COLORS
 
 //GREY
-$textColorC: #343434; //Main Headers, nav links
+$textColorA: #343434; //Main Headers, nav links
 $textColorB: #989898; //--Paragraph immediately under section headings
 //--contact form placeholders
 //--light grey text in footer
@@ -58,6 +58,11 @@ $textContrast: #FFF; //White text
 //PINK
 $textAccent: #FD7070; // active link
 
+
+// FONTS
+$mainFont: 'Raleway', sans-serif;
+
+$numberFont: 'Open Sans', sans-serif;
 
 
 //BREAKPOINTS

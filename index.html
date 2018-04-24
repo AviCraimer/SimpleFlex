@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script defer src="https: //use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Raleway:300,700" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <title>Simpleflex Homepage</title>
 </head>
@@ -82,17 +83,17 @@
           <div class="wrapper about__content
           flex-container flex-container--3cols">
             <div class="about__card card">
-              <h2>Modern</h2>
+              <h3>Modern</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quo.</p>
 
             </div>
             <div class="about__card card">
-               <h2>Simple</h2>
+               <h3>Simple</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quo.</p>
 
             </div>
             <div class="about__card card">
-               <h2>Flexible</h2>
+               <h3>Flexible</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quo.</p>
 
             </div>
@@ -103,30 +104,30 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fugit.</p>
           <div class="wrapper skills__content content flex-container flex-container--4cols">
             <div class="skills__card card">
-              <p class="skils__card__stat">
-                75
-              </p>
+              <div class="imgWrap">
+                <img src="assets/circle-1.png" alt="75">
+              </div>
               <h3>Web Design</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, in.</p>
             </div>
             <div class="skills__card card">
-              <p class="skils__card__stat">
-                62
-              </p>
+              <div class="imgWrap">
+                  <img src="assets/circle-2.png" alt="62">
+              </div>
               <h3>WordPress</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, in.</p>
             </div>
             <div class="skills__card card">
-              <p class="skils__card__stat">
-                57
-              </p>
+              <div class="imgWrap">
+                <img src="assets/circle-3.png" alt="57">
+              </div>
               <h3>jQuery</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, in.</p>
             </div>
             <div class="skills__card card">
-              <p class="skils__card__stat">
-                87
-              </p>
+              <div class="imgWrap">
+                <img src="assets/circle-4.png" alt="87">
+              </div>
               <h3>HTML/CSS</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, in.</p>
             </div>
@@ -134,19 +135,21 @@
       </section>
       <aside class="quote">
         <blockquote>
-          Design to express, not to impress.
-          <span>- John Tanedo -</span>
+          <p class="quote__quote-text" >Design to express, not to impress.</p>
+          <p class="quote__attribution">- John Tanedo -</p>
         </blockquote>
       </aside>
       <section class="projects">
         <h2>Latest Projects</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, accusantium. </p>
         <div class="project__content">
-
+          <img src="assets/mockup-2.png" alt="A man with glasses, thinking while touching his temples">
+          <div class="project__content__arrow-left"></div>
+          <div class="project__content__arrow-right"></div>
         </div>
       </section>
       <section class="team">
-        <h1>Meet the Team</h1>
+        <h2>Meet the Team</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptates!</p>
         <div class="wrapper team__content flex-container flex-container--4cols">
           <div class="team__card card"></div>
@@ -157,10 +160,34 @@
       </section>
       <aside class="facts">
         <div class="wrapper facts__content flex-container flex-container--4cols">
-          <div class="facts__card card"></div>
-          <div class="facts__card card"></div>
-          <div class="facts__card card"></div>
-          <div class="facts__card card"></div>
+          <div class="facts__card card">
+            <img src="assets/icon-1.png" aria-hidden="true">
+            <h3>2500</h3>
+            <p class="button1">
+              Happy Clients
+            </p>
+          </div>
+          <div class="facts__card card">
+            <img src="assets/icon-2.png" aria-hidden="true">
+            <h3>650</h3>
+            <p class="button1">
+              Projects Made
+            </p>
+          </div>
+          <div class="facts__card card">
+            <img src="assets/icon-3.png" aria-hidden="true">
+            <h3>5780</h3>
+            <p class="button1">
+              Letters Sent
+            </p>
+          </div>
+          <div class="facts__card card">
+            <img src="assets/icon-4.png" aria-hidden="true">
+            <h3>3400</h3>
+            <p class="button1">
+              Brief's Written
+            </p>
+          </div>
         </div>
       </aside>
       <section class="portfolio">
@@ -179,36 +206,52 @@
         <div class="portfolio__gallery flex-container flex-container--4cols">
           <!-- figure.portfolio__gallery__card.card*8>img+figcaption -->
           <figure class="portfolio__gallery__card card">
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="assets/portfolio-1.png" alt="A collection of coffee table stuff including a magazine, pencil, candle, and cushions.">
+            <figcaption>
+              <h4><a href="#">Kopazito</a></h4>
+            </figcaption>
           </figure>
           <figure class="portfolio__gallery__card card">
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="assets/portfolio-2.png" alt="A laptop showing a drawing of a shirt and some text.">
+            <figcaption>
+              <h4><a href="#">I love Picles</a></h4>
+            </figcaption>
           </figure>
           <figure class="portfolio__gallery__card card">
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="assets/portfolio-3.png" alt="A colourful abstract painting.">
+            <figcaption>
+              <h4><a href="#">Shotmen</a></h4>
+            </figcaption>
           </figure>
           <figure class="portfolio__gallery__card card">
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="assets/portfolio-4.png" alt="An iPad art app, with fingers holding a stylus.">
+            <figcaption>
+              <h4><a href="#">Voodoo</a></h4>
+            </figcaption>
           </figure>
           <figure class="portfolio__gallery__card card">
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="assets/portfolio-5.png" alt="A whole pile of coloured pencils on top of a blank adult colouring book.">
+            <figcaption>
+              <h4><a href="#">Barbapapa</a></h4>
+            </figcaption>
           </figure>
           <figure class="portfolio__gallery__card card">
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="assets/portfolio-6.png" alt="A modern spin on a traditional japanese painting of a woman.">
+            <figcaption>
+              <h4><a href="#">Ron Weasley</a></h4>
+            </figcaption>
           </figure>
           <figure class="portfolio__gallery__card card">
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="assets/portfolio-7.png" alt="An iPad with a sketching program and a person holding the Apple pencil.">
+            <figcaption>
+              <h4><a href="#">My Diamond Returns!</a></h4>
+            </figcaption>
           </figure>
           <figure class="portfolio__gallery__card card">
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="assets/portfolio-8.png" alt="Cartoon ink drawings, including a full-cheeked pig.">
+            <figcaption>
+              <h4><a href="#">I can pay my bills</a></h4>
+            </figcaption>
           </figure>
         </div><!-- END OF GALLERY -->
         <a class="button1" href="#">Load More</a>
@@ -224,36 +267,40 @@
             <figure class="blog__card">
               <img src="assets/blog-1.png" alt="An open sketchbook with ink drawings">
               <figcaption>
-                <h3>Post With Image</h3>
+                <h4>Post With Image</h4>
+                <h5>Dec 29, 2013</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, id.</p>
               </figcaption>
             </figure>
             <figure class="blog__card">
               <img src="assets/blog-2.png" alt="An artist's mannequin hand on top of a sketchbook.">
               <figcaption>
-                <h3>Post With Video</h3>
+                <h4>Post With Video</h4>
+                <h5>Dec 19, 2013</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sit?</p>
               </figcaption>
             </figure>
             <figure class="blog__card">
               <img src="assets/blog-3.png" alt="A tattooed hand of an artists drawing on an iPad with the Apple pencil.">
               <figcaption>
-                <h3>Post With Slider</h3>
+                <h4>Post With Slider</h4>
+                <h5>Dec 17, 2013</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, suscipit!</p>
               </figcaption>
             </figure>
           </div> <!-- END OF BLOG CONTENT -->
+          <a href="#" class="button1">View All</a>
         </div> <!-- END OF WRAPPER -->
       </section>
       <!-- END OF BLOG -->
       <!-- ADDRESS SECTION -->
       <section class="address">
-        <address class="address_info">
-          <p>+91 544 567 8943</p>
-          <p>info@simpleflex.com</p>
-          <p>8605 Santa Monica Blvd, Los Angeles, California, 97845, US</p>
+        <address class="address__info">
+          <p class="address__info__phone">+91 544 567 8943</p>
+          <p class="address__info__email">info@simpleflex.com</p>
+          <p class="address__info__street">8605 Santa Monica Blvd, Los Angeles, California, 97845, US</p>
         </address>
-        <div class="address_map">
+        <div class="address__map">
 
         </div>
       </section>
@@ -262,11 +309,10 @@
       <section class="contact">
         <div class="contact__content">
           <form action="">
-            <input type="text">
-            <input type="email">
-            <textarea name="" id="" cols="30" rows="10">
-
-            </textarea>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea name="" id="" cols="30" rows="10">Message</textarea>
+            <input class="button1" type="submit" value="Send">
           </form>
         </div>
       </section>

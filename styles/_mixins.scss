@@ -1,6 +1,3 @@
-$mobile:"max-width:450px";
-$tablet:"max-width:900px";
-
 
 @mixin mediaQ($point) {
 
@@ -12,3 +9,22 @@ $tablet:"max-width:900px";
 		@media ($tablet) { @content; }
 	}
  }
+
+//Modifeid from this article: https://engageinteractive.co.uk/blog/top-10-scss-mixins
+ @mixin type(
+    $size: false,
+    $colour: false,
+    $weight: false,
+    $lh: false,
+    $align:false,
+    $upper:false) {
+  // @if $family { font-family: $family; }
+  @if $size { font-size: $size*1rem ; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+  @if $align { text-align: $align}
+  @if $upper { text-transform: uppercase; }
+}
+
+
