@@ -3,22 +3,59 @@
     display: flex;
     &__h1 {
       width: 50%;
-      text-align: center;
+      @include mediaQ($mobile) {
+        width: 60%;
+      }
+     img {
+      display: block;
+      margin: 30px auto 18px auto;
+      width: 182px;
+     }
     }
 
     &__nav {
       width: 50%;
       display: flex;
-        ul {
+      position: relative;
+      .fa-bars { //Hamberger icon
+        display: none;
+        @include mediaQ($mobile) {
+          display: flex;
+          align-items: center;
+          font-size: 4rem;
+          color: $textColorA;
+          padding-right: 30px;
+        }
+      }
+      ul {
           display: flex;
           margin: 0;
           padding: 0;
           list-style: none;
+          @include mediaQ($mobile) {
+            display: none;
+            position: absolute;
+            top: 126px;
+            flex-direction: column;
+            background-color:$contrastColorB;
+            width: 100%;
+          }
         }//ul
+        @include mediaQ($mobile) {
+          justify-content: flex-end;
+          width: 40%;
+          background-color: $contrastColorA;
+          &:hover {
+            ul {
+            display: block;
+            }
+          }//:hover
+        }//nav mediaQ
       } //__nav
     }//__top-bar
   &__slider {
     &__slide {
+
       display: flex;
       > div {
         flex: 1 1 0;
@@ -89,25 +126,7 @@
 
 }//.header
 
-@media ($mobile) {
-  .header__slider__slide {
-    flex-direction: column-reverse;
-    &__imgCol {
-      transform: none;
-      padding: 5%;
-      div {
-        // display: contents;
-      }
-    }
-    &__content {
-      p, h2 {
-        width: 100%;
-        margin: 0;
-        padding: 5%;
-      }
-    }
-  }
-}
+
 
 
 
