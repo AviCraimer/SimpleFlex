@@ -9,19 +9,6 @@
   &__info {
     position: relative;
     padding-bottom: 93px;
-    // //SOLID CSS TRIANGLE
-    // &::after {
-    //   content: "";
-    //   width: 0;
-    //   height: 0;
-    //   border-style: solid;
-    //   border-width: 25px 39px 0 39px;
-    //   border-color: $accentColor1A transparent transparent transparent;
-    //   position: absolute;
-    //   bottom: -25px;
-    //   left: calc(50% - 39px);
-    //   z-index: 10;
-    // }
   }
 
   &__info__phone {
@@ -41,6 +28,10 @@
     @include type(3, $textColorB, 300, 1.8, center);
     margin: 0;
   }
+  &__map img {
+    display: block;
+  }
+
   @include mediaQ($laptop) {
     &__info__phone {
       font-size:3rem ;
