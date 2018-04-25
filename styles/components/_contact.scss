@@ -1,0 +1,38 @@
+.contact {
+
+  .social {
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
+  input:not(.button2), textarea {
+    @include type(1.6, $textColorB, 300, 1.9, center)
+    width: 100%;;
+    display: block;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  input::placeholder {
+    color: $textColorB;
+  }
+
+  form {
+    max-width: 630px;
+    width: 70%;
+    margin: auto;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input {
+  }
+
+  .button2 {
+    display: block;
+    margin: 30px  auto 0 auto ;
+    width: 170px;
+    background-color:transparent;
+  }
+}

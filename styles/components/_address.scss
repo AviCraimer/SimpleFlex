@@ -1,0 +1,68 @@
+.address {
+  padding-bottom: 0;
+
+  p {
+    font-family: $numberFont;
+    font-style: normal;
+  }
+
+  &__info__phone {
+    @include type(4, $textContrast, 700, 1.4, center);
+    margin: 0;
+  }
+  &__info__email {
+    @include type(8, $textColorA, 700, 0.7, center);
+    width: 90%;
+    max-width: 972px;
+    margin: 30px auto;
+    border: 1px solid $textContrast;
+    padding: 15px 73px;
+
+  }
+  &__info__street {
+    @include type(3, $textColorB, 300, 1.8, center);
+    margin: 0;
+    margin-bottom: 93px;
+  }
+  @include mediaQ($laptop) {
+    &__info__phone {
+      font-size:3rem ;
+    }
+    &__info__email {
+      font-size:6rem;
+      padding: 15px 50px;
+    }
+    &__info__street {
+      font-size:2.6rem;
+      margin-bottom: 80px;
+    }
+  }
+  @include mediaQ($tablet) {
+    &__info__phone {
+      font-size:2.5rem ;
+    }
+    &__info__email {
+      font-size:4rem;
+      padding: 15px 30px;
+    }
+    &__info__street {
+      font-size:1.8rem;
+      margin-bottom: 70px;
+    }
+  }
+  @include mediaQ($mobile) {
+    &__info__phone {
+      font-size:2.4rem ;
+    }
+    &__info__email {
+      width: 95%;
+      font-size:2.8rem;
+      padding: 10px;
+    }
+    &__info__street {
+      font-size:1.6rem;
+      margin-bottom: 40px;
+    }
+  }
+
+}

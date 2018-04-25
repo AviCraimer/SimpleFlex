@@ -1,11 +1,15 @@
 
 .footer {
   &__content {
+    padding: 100px 0;
     h4 {
       @include type(2.4, $textColorA, 700, 1.25, left);
+      margin-bottom: 25px;
+      margin-top: 0;
     }
     h5 {
       @include type(1.6, $textColorC, 300, 1.5, left);
+      margin-bottom: 10px;
     }
     p {
       @include type(1.6, $textColorB, 300, 1.5, left);
@@ -19,9 +23,40 @@
 
   }
   &__card2 {
+    .imgWrap {
+      width: 22%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      float: left;
+    }
+    p {
+      margin: 0;
+    }
 
   }
   &__card3 {
+    input {
+      height: 55px;
+      &:first-of-type {
+        background-color: $bgColorF;
+        border: none;
+        width: 60%;
+        margin-right: 10px;
+      }
+    }
+    .button3 {
+      background-color: transparent
+    }
+    @include mediaQ($laptop) {
+      input:first-of-type {
+        width: 100%;
+        margin: 0 0 15px 0;
+      }
+      .button3 {
+        display: block;
+        margin: 0 auto;
+      }
+    }//card3 mediaQ
 
   }
   &__card4 {
