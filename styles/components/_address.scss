@@ -6,6 +6,24 @@
     font-style: normal;
   }
 
+  &__info {
+    position: relative;
+    padding-bottom: 93px;
+    // //SOLID CSS TRIANGLE
+    // &::after {
+    //   content: "";
+    //   width: 0;
+    //   height: 0;
+    //   border-style: solid;
+    //   border-width: 25px 39px 0 39px;
+    //   border-color: $accentColor1A transparent transparent transparent;
+    //   position: absolute;
+    //   bottom: -25px;
+    //   left: calc(50% - 39px);
+    //   z-index: 10;
+    // }
+  }
+
   &__info__phone {
     @include type(4, $textContrast, 700, 1.4, center);
     margin: 0;
@@ -22,7 +40,6 @@
   &__info__street {
     @include type(3, $textColorB, 300, 1.8, center);
     margin: 0;
-    margin-bottom: 93px;
   }
   @include mediaQ($laptop) {
     &__info__phone {
@@ -64,5 +81,4 @@
       margin-bottom: 40px;
     }
   }
-
 }

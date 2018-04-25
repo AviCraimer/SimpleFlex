@@ -1,3 +1,7 @@
+// I made a consistent flex-container for my responsive layouts for 3 and 4 columns.
+
+//Although with this website the 3 column layout is only used for the about section, by seprating the basic layout stylings I could re-use this code for future projects.
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;

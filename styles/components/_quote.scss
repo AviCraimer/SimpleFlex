@@ -55,4 +55,11 @@
       font-size: 2.2rem;
     }
   }
+  //CSS TRIANGLES
+  &::before {
+    border-color: transparent $accentColor2A transparent transparent;
+  }
+  &::after {
+    border-color: $accentColor2B transparent transparent transparent;
+  }
 }

@@ -1,6 +1,5 @@
-
+//Vincent Chevalier shared this mixin with me at the Fishbowl Session on responsive design. It allows me to fine tune my breakpoints without having to change all my media queries.
 @mixin mediaQ($point) {
-
 	@if $point == $mobile {
 		@media ($mobile) { @content; }
 	}
@@ -22,7 +21,6 @@
     $lh: false,
     $align:false,
     $upper:false) {
-  // @if $family { font-family: $family; }
   @if $size { font-size: $size*1rem ; }
   @if $colour { color: $colour; }
   @if $weight { font-weight: $weight; }

@@ -55,7 +55,8 @@
             top: 80px;
             flex-direction: column;
             background-color:$bgColorA;
-            border-radius: 0 0 6px 6px ;
+            border-radius: 0 0 6px 6px;
+            z-index: 10;
           }
         }//ul
         li {
@@ -97,74 +98,90 @@
 
   // HEADER SLIDES
     &__slider {
-    &__slide {
-
-      display: flex;
-      > div {
-        flex: 1 1 0;
-        // flex-grow: 1;
-        // flex-shrink:0;
-      }
-
-    }//slide
-    &__slide1 {
-      display: grid;
-      grid-template-rows:
-        152fr
-        87fr
-        449fr
-        112fr
-        ;
-
-      grid-template-columns:
-        minmax(40px, 375fr)
-        444px //text
-        56px //overlap
-        752px //phone image
-        minmax(40px, 293fr)
-        ;
-      @include mediaQ($laptop) {
-        grid-template-columns:
-        minmax(40px, 375fr)
-        //Scale down text and imagec cols  by 0.625
-        278px //text
-        56px //overlap
-        470px //phone image
-        minmax(40px, 293fr)
-        ;
-      }
-
-      @include mediaQ($tablet) {
-        //Switching to flex will also help with support since mobile browsers may not support grid.
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 50px;
-      }
-
-      &__left {
-        grid-area: 3 / 2 / 4 / 4;
-      }
-
-      &__right { //PHONE IMAGE
-          grid-area: 2 / 3 / 4 / 5;
-      }
-
-      h2, p {
-        margin-top: 0;
-      }
-
-      h2 {
-        @include mediaQ($laptop) {
-          font-size: 5rem;
+      position: relative;
+      &__three-dots {
+        width: 68px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        @include mediaQ($mobile) {
+          bottom: 20px;
         }
-        margin-bottom: 40px;
       }
+      &__slide {
 
-      p {
-        grid-area: 5 / 2 / 6 / 3;
-        margin-bottom: 56px;
-      }
-    }//slide1
+        display: flex;
+        > div {
+          flex: 1 1 0;
+          // flex-grow: 1;
+          // flex-shrink:0;
+        }
+
+      }//slide
+      &__slide1 {
+        display: grid;
+        grid-template-rows:
+          152fr
+          87fr
+          449fr
+          112fr
+          ;
+
+        grid-template-columns:
+          minmax(40px, 375fr)
+          444px //text
+          56px //overlap
+          752px //phone image
+          minmax(40px, 293fr)
+          ;
+        @include mediaQ($laptop) {
+          grid-template-columns:
+          minmax(40px, 375fr)
+          //Scale down text and imagec cols  by 0.625
+          278px //text
+          56px //overlap
+          470px //phone image
+          minmax(40px, 293fr)
+          ;
+        }
+
+        @include mediaQ($tablet) {
+          //Switching to flex will also help with support since mobile browsers may not support grid.
+          display: flex;
+          flex-direction: column-reverse;
+          padding: 50px;
+        }
+        @include mediaQ($mobile) {
+          padding-bottom: 100px;
+        }
+
+        &__left {
+          grid-area: 3 / 2 / 4 / 4;
+        }
+
+        &__right { //PHONE IMAGE
+            grid-area: 2 / 3 / 4 / 5;
+        }
+
+        h2, p {
+          margin-top: 0;
+        }
+
+        h2 {
+          @include mediaQ($laptop) {
+            font-size: 5rem;
+          }
+          margin-bottom: 40px;
+        }
+
+        p {
+          grid-area: 5 / 2 / 6 / 3;
+          margin-bottom: 56px;
+        }
+
+      }//slide1
   }//slider
 }//.header
 

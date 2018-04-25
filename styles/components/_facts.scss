@@ -31,4 +31,11 @@
       padding: 0 50px;
     }
   }//card
+  //CSS TRIANGLES
+  &::before {
+    border-color: transparent $accentColor3A transparent transparent;
+  }
+  &::after {
+    border-color: $accentColor3B transparent transparent transparent;
+  }
 }

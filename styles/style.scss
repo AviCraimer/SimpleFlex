@@ -3,12 +3,12 @@
 @import "mixins";
 @import "global";
 @import "colors";
+@import "flex-containers";
 
 
 
 //components
 @import "components/header";
-@import "components/flex-container";
 @import "components/about";
 @import "components/skills";
 @import "components/quote";
