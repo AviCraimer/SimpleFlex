@@ -1,12 +1,53 @@
+
 .portfolio {
-  h4 {
-    background: $contrastColorA;
+  .portfolio__gallery__card { //need to use class selector for specificity
     margin: 0;
   }
-  .card {
-    margin: 0;
+  &__nav a, h4 a  {
+    @include type(1.2, $textContrast, 700, false, center, true);
   }
-  img {
+  &__nav {
+    max-width: 363px;
+    margin: 0 auto 51px auto ;
+    display: flex;
+    justify-content: center;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+    }
+    a {
+      padding: 13px;
+      &:hover {
+        color: $textAccent;
+      }
+    }
+  }
+  &__gallery {
+    margin-bottom: 40px;
+    h4 {
+      text-align: center;
+      background: $contrastColorA;
+      margin: 0;
+      padding: 30px;
+      a {
+        color:  $textColorA;
+        padding: 30px;
+        &:hover {
+          color: $textAccent;
+        }
+      }
+    }
+
+    img {
+      display: block;
+    }
+  }
+  .button2 {
     display: block;
+    margin: auto;
+    max-width: 170px;
   }
+
 }

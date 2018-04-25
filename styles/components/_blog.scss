@@ -1,28 +1,83 @@
-//BLOG GRID LAYOUT
-.blog__content {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns:1fr 1fr ;
-  grid-template-rows: 1fr 1fr;
-  @include mediaQ($mobile) {
-    grid-template-columns:1fr;
-    grid-template-rows: auto;
+.blog {
+  h4 {
+    @include type(2.4, $textContrast, 700, 1.25, center);
+    margin: 0;
   }
-}
+  h5 {
+    font-family: $numberFont;
+    @include type(1.2, $textContrast, 700, 2, center);
+    margin-top: 10px ;
+    margin-bottom: 18px;
+  }
 
-.blog__card {
-  display: flex;
-  @include mediaQ($mobile) {
+
+  &__content {
+    max-width: 1170px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+
+    p {
+      @include type (1.6, $textColorB, 300, 1.5, center);
+      margin: 0;
+    }
+
+  }
+
+  &__card {
+    display: flex;
+  }
+
+  &__card1 {
+    grid-row: span 2;
     flex-direction: column;
   }
-}
 
-.blog__card:first-child {
-  grid-row: span 2;
-  flex-direction: column;
-  @include mediaQ($mobile) {
-    grid-row: span 1;
+  figcaption {
+    padding: 30px;
+  }
+  > a { //View All Button
+    display: block;
+    max-width: 170px;
+    margin: auto;
+  }
+  @media (max-width: 1350px) and (min-width: 1000px) {
+    h4 {
+      font-size: 1.8rem;
+    }
+    h5 {
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+    &__content {
+      grid-gap: 40px;
+    }
+    figcaption {
+      padding: 20px;
+    }
+  }
+  @media (max-width:1000px)  {
+
+    &__content {
+      display: block;
+    }
+    &__card {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    &__card3 {
+      margin: 0;;
+    }
+    figcaption {
+      padding: 40px;
+    }
   }
 }
+
+
 
 

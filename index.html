@@ -12,34 +12,7 @@
 </head>
 
 <body>
-  <div class="guide guide1">20%</div>
-  <div class="guide guide2">23%</div>
-  <div class="guide guide3">25%</div>
-  <div class="guide guide4">28%</div>
-  <div class="guide guide5">30%</div>
-  <div class="guide guide6">34%</div>
-  <div class="guide guide7">35%</div>
-  <div class="guide guide8">39%</div>
-  <div class="guide guide9">40%</div>
-  <div class="guide guide10">44%</div>
-  <div class="guide guide11">46%</div>
-  <div class="guide guide12">49%</div>
-  <div class="guide guide13">51%</div>
-  <div class="guide guide14">54%</div>
-  <div class="guide guide15">56%</div>
-  <div class="guide guide16">60%</div>
-  <div class="guide guide17">61%</div>
-  <div class="guide guide18">65%</div>
-  <div class="guide guide19">66%</div>
-  <div class="guide guide20">70%</div>
-  <div class="guide guide21">72%</div>
-  <div class="guide guide22">75%</div>
-  <div class="guide guide23">77%</div>
-  <div class="guide guide24">80%</div>
-  <div class="guide guide25">50%</div>
-
-
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__top-bar">
         <h1 class="header__top-bar__h1">
           <img src="assets/logo.png" alt="Simpleflex">
@@ -47,11 +20,11 @@
         <nav class="header__top-bar__nav">
           <i class="fas fa-bars"></i>
           <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -69,17 +42,15 @@
           </div>
         </div>
         <!-- END OF SLIDE 1 -->
-
+        <!-- Note as we were not required to do hidden slides I left them for future work -->
         <div class="header__slider__slide header__slider__slide2">
-          <h2>Slide 2</h2>
         </div>
         <div class="header__slider__slide header__slider__slide3">
-          <h2>Slide 3</h2>
         </div>
       </section>
     </header>
     <main>
-      <section class="about">
+      <section class="about" id="about" >
           <h2>About Us</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, fugit.</p>
           <div class="wrapper about__content
@@ -167,37 +138,73 @@
         <h2>Meet the Team</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptates!</p>
         <div class="wrapper team__content flex-container flex-container--4cols">
-          <div class="team__card card"></div>
-          <div class="team__card card"></div>
-          <div class="team__card card"></div>
-          <div class="team__card card"></div>
+          <figure class="team__card team__card1">
+            <img src="assets/headshot-1.png" alt="Jack Kornbloom">
+            <figcaption class="team__card__social social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-p"></i>
+              </figcaption>
+            </figure>
+            <figure class="team__card team__card2">
+              <img src="assets/headshot-2.png" alt="Leah Wilson">
+              <figcaption class="team__card__social social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-pinterest-p"></i>
+            </figcaption>
+          </figure>
+          <figure class="team__card team__card3">
+            <img src="assets/headshot-3.png" alt="Frank Clark">
+            <figcaption class="team__card__social social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-flickr"><span></span> </i>
+            </figcaption>
+          </figure>
+          <figure class="team__card team__card4">
+            <img src="assets/headshot-4.png" alt="Sally Fredricks">
+            <figcaption class="team__card__social social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </figcaption>
+          </figure>
         </div>
       </section>
       <aside class="facts">
-        <div class="wrapper facts__content flex-container flex-container--4cols">
-          <div class="facts__card card">
-            <img src="assets/icon-1.png" aria-hidden="true">
+        <div class="facts__content flex-container flex-container--4cols">
+          <div class="facts__card">
+            <div class="imgWrap">
+              <img src="assets/icon-1.png" aria-hidden="true">
+            </div>
             <h3>2500</h3>
             <p class="button1">
               Happy Clients
             </p>
           </div>
-          <div class="facts__card card">
-            <img src="assets/icon-2.png" aria-hidden="true">
+          <div class="facts__card">
+            <div class="imgWrap">
+              <img src="assets/icon-2.png" aria-hidden="true">
+            </div>
             <h3>650</h3>
             <p class="button1">
               Projects Made
             </p>
           </div>
-          <div class="facts__card card">
-            <img src="assets/icon-3.png" aria-hidden="true">
+          <div class="facts__card">
+            <div class="imgWrap">
+              <img src="assets/icon-3.png" aria-hidden="true">
+            </div>
             <h3>5780</h3>
             <p class="button1">
               Letters Sent
             </p>
           </div>
-          <div class="facts__card card">
-            <img src="assets/icon-4.png" aria-hidden="true">
+          <div class="facts__card">
+            <div class="imgWrap">
+              <img src="assets/icon-4.png" aria-hidden="true">
+            </div>
             <h3>3400</h3>
             <p class="button1">
               Brief's Written
@@ -205,7 +212,7 @@
           </div>
         </div>
       </aside>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <h2>Our Portfolio</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ducimus!</p>
         <nav class="portfolio__nav" >
@@ -220,49 +227,49 @@
 
         <div class="portfolio__gallery flex-container flex-container--4cols">
           <!-- figure.portfolio__gallery__card.card*8>img+figcaption -->
-          <figure class="portfolio__gallery__card card">
+          <figure class="portfolio__gallery__card">
             <img src="assets/portfolio-1.png" alt="A collection of coffee table stuff including a magazine, pencil, candle, and cushions.">
             <figcaption>
               <h4><a href="#">Kopazito</a></h4>
             </figcaption>
           </figure>
-          <figure class="portfolio__gallery__card card">
+          <figure class="portfolio__gallery__card">
             <img src="assets/portfolio-2.png" alt="A laptop showing a drawing of a shirt and some text.">
             <figcaption>
               <h4><a href="#">I love Picles</a></h4>
             </figcaption>
           </figure>
-          <figure class="portfolio__gallery__card card">
+          <figure class="portfolio__gallery__card">
             <img src="assets/portfolio-3.png" alt="A colourful abstract painting.">
             <figcaption>
               <h4><a href="#">Shotmen</a></h4>
             </figcaption>
           </figure>
-          <figure class="portfolio__gallery__card card">
+          <figure class="portfolio__gallery__card">
             <img src="assets/portfolio-4.png" alt="An iPad art app, with fingers holding a stylus.">
             <figcaption>
               <h4><a href="#">Voodoo</a></h4>
             </figcaption>
           </figure>
-          <figure class="portfolio__gallery__card card">
+          <figure class="portfolio__gallery__card">
             <img src="assets/portfolio-5.png" alt="A whole pile of coloured pencils on top of a blank adult colouring book.">
             <figcaption>
               <h4><a href="#">Barbapapa</a></h4>
             </figcaption>
           </figure>
-          <figure class="portfolio__gallery__card card">
+          <figure class="portfolio__gallery__card">
             <img src="assets/portfolio-6.png" alt="A modern spin on a traditional japanese painting of a woman.">
             <figcaption>
               <h4><a href="#">Ron Weasley</a></h4>
             </figcaption>
           </figure>
-          <figure class="portfolio__gallery__card card">
+          <figure class="portfolio__gallery__card">
             <img src="assets/portfolio-7.png" alt="An iPad with a sketching program and a person holding the Apple pencil.">
             <figcaption>
               <h4><a href="#">My Diamond Returns!</a></h4>
             </figcaption>
           </figure>
-          <figure class="portfolio__gallery__card card">
+          <figure class="portfolio__gallery__card">
             <img src="assets/portfolio-8.png" alt="Cartoon ink drawings, including a full-cheeked pig.">
             <figcaption>
               <h4><a href="#">I can pay my bills</a></h4>
@@ -274,38 +281,36 @@
       <!-- END OF PORTFOLIO -->
       <!-- BLOG SECTION -->
       <!-- .blog>.wrapper>figure.blog__card*3>img+figcaption -->
-      <section class="blog">
-        <div class="wrapper">
-          <H2>Our Blog</H2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, doloribus.</p>
-          <div class="blog__content ">
-            <figure class="blog__card">
-              <img src="assets/blog-1.png" alt="An open sketchbook with ink drawings">
-              <figcaption>
-                <h4>Post With Image</h4>
-                <h5>Dec 29, 2013</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, id.</p>
-              </figcaption>
-            </figure>
-            <figure class="blog__card">
-              <img src="assets/blog-2.png" alt="An artist's mannequin hand on top of a sketchbook.">
-              <figcaption>
-                <h4>Post With Video</h4>
-                <h5>Dec 19, 2013</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sit?</p>
-              </figcaption>
-            </figure>
-            <figure class="blog__card">
-              <img src="assets/blog-3.png" alt="A tattooed hand of an artists drawing on an iPad with the Apple pencil.">
-              <figcaption>
-                <h4>Post With Slider</h4>
-                <h5>Dec 17, 2013</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, suscipit!</p>
-              </figcaption>
-            </figure>
-          </div> <!-- END OF BLOG CONTENT -->
-          <a href="#" class="button2">View All</a>
-        </div> <!-- END OF WRAPPER -->
+      <section class="blog" id="blog">
+        <H2>Our Blog</H2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, doloribus.</p>
+        <div class=" blog__content ">
+          <figure class="blog__card blog__card1">
+            <img src="assets/blog-1.png" alt="An open sketchbook with ink drawings">
+            <figcaption>
+              <h4>Post With Image</h4>
+              <h5>Dec 29, 2013</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit deserunt voluptatum incidunt doloribus, beatae temporibus ullam nam dolore labore.</p>
+            </figcaption>
+          </figure>
+          <figure class="blog__card blog__card2">
+            <img src="assets/blog-2.png" alt="An artist's mannequin hand on top of a sketchbook.">
+            <figcaption>
+              <h4>Post With Video</h4>
+              <h5>Dec 19, 2013</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sit?</p>
+            </figcaption>
+          </figure>
+          <figure class="blog__card blog__card3">
+            <img src="assets/blog-3.png" alt="A tattooed hand of an artists drawing on an iPad with the Apple pencil.">
+            <figcaption>
+              <h4>Post With Slider</h4>
+              <h5>Dec 17, 2013</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, suscipit!</p>
+            </figcaption>
+          </figure>
+        </div> <!-- END OF BLOG CONTENT -->
+        <a href="#" class="button2">View All</a>
       </section>
       <!-- END OF BLOG -->
       <!-- ADDRESS SECTION -->
@@ -321,7 +326,7 @@
       </section>
       <!-- END OF ADDRESS -->
       <!-- CONTACT SECTION -->
-      <section class="contact">
+      <section class="contact" id="contact" >
         <div class="contact__content">
           <form action="">
             <input type="text" placeholder="Name">

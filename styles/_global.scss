@@ -17,6 +17,14 @@ h2 {
   @include type(6, $textContrast, 300, 1, center, true);
   margin-top: 0;
   margin-bottom: 40px;
+  @include mediaQ($tablet) {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  @include mediaQ($mobile) {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
 }
 
 section p {
@@ -26,6 +34,9 @@ section p {
 
 section > p {
   @include type(2.4, $textColorB, 300, 1.5, center);
+  max-width: 518px;
+  width: 40%;
+  margin: auto;
   padding-bottom: 36px;
   margin-bottom: 51px;
   position: relative;
@@ -37,11 +48,23 @@ section > p {
     bottom: 0;
     left: calc(50% - 170px / 2);
   }
+  @include mediaQ($tablet) {
+    width: 60%;
+  }
+
+
 }
 
 h3 {
   @include type(2.4,$textContrast, 700, 1.25, center);
   margin: 29px 0;
+
+}
+
+section > p, h3 {
+  @include mediaQ($mobile) {
+    font-size: 1.8rem;
+  }
 }
 
 .button1 {
@@ -62,7 +85,6 @@ h3 {
 }
 
 
-
 //GLOBAL ELEMENT STYLES
 img {
   width: 100%;
@@ -76,16 +98,70 @@ img {
   width: 70%;
   max-width: 1170px;
   margin: auto;
+  @include mediaQ($laptop) {
+    width: 80%;
+  }
   @include mediaQ($tablet) {
     width: 90%;
   }
 }
 
 main {
-  section {
+  section, .facts {
     padding: 100px 0;
   }
 }
 
 
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  .fab {
+    color: $textContrast;
+    margin: 0 10px;
+    font-size: 1.8rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // &:last-child {
+    //   padding-right: 0;
+    // }
+  }
+
+  .fa-facebook-f{
+    background-color: #4f7dc0;
+  }
+  .fa-twitter{
+    background-color: #00acf0;
+  }
+  .fa-pinterest-p{
+    background-color: #cf191a;
+  }
+  .fa-dribbble{
+    background-color: #f7679a;
+  }
+  .fa-flickr{
+    //This was required since the Flickr icon provided by FontAwesome had the color and background reversed.
+    color: #ff0085;
+    background-color: #ff0085;
+    position: relative;
+    z-index: 0;
+    span {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      z-index: -10;
+      top: calc(50% - 5px);
+      background-color: $textContrast;
+    }
+  }
+  .fa-linkedin-in{
+    background-color: #00649c;
+  }
+
+}

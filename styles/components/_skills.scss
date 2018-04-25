@@ -1,11 +1,19 @@
 .skills {
   &__card {
-    > div {
+    > div { //imgWrap
       width: 48%;
       margin: auto;
-    }
+      @include mediaQ($tablet) {
+         width: 30%;
+      }
+    }//imgWrap
+
     p {
       margin: 0;
+    }
+     //Card Media Query
+     @include mediaQ($tablet) {
+      padding: 0 30px;
     }
   }
 }

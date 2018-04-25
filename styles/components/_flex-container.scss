@@ -14,14 +14,11 @@
       }
       @include mediaQ($tablet) {
         flex-basis: 90%;
+        &:nth-child(n) { //Needed for specificity
+          margin-right: 0;
+        }
       }
     }//flex children
-
-    .about__card {
-      @include mediaQ($tablet){
-        margin-right: 0;
-      }
-    }
   }//3cols
 
   //FOUR-TWO-ONE COLUMN RESPONSIVE LAYOUT

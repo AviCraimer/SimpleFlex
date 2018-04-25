@@ -10,6 +10,7 @@
     p {
       margin: 0;
     }
+
   }
   &__card1 {
     border-bottom-color:$accentColor1B;
@@ -20,5 +21,26 @@
   &__card3 {
     border-bottom-color:$accentColor3B;
   }
+  //About section media query
+  @include mediaQ($tablet) {
+    &__content {
+      padding:0 60px;
+    }
+
+    &__card {
+      padding: 60px;
+    }
+
+  }//mobile mediaQ
+  @include mediaQ($mobile) {
+    &__content {
+      padding:0 40px;
+    }
+
+    &__card {
+      padding: 30px;
+    }
+
+  }//mobile mediaQ
 
 }

@@ -1,7 +1,7 @@
 // HEADER TYPOGRAPHY
 
 .header__top-bar__nav a {
-  @include type(1.3,$textColorA,300,5);
+  @include type(1.3,$textColorA,300);
 }
 
 .header__slider h2 {
@@ -15,15 +15,14 @@
   @include type(2,$textColorA, 300, 1.5, left);
 }
 
+//REMAINING HEADER STYLES
 .header {
   // TOP BAR MENU AND LOGO
    &__top-bar {
     display: flex;
     &__h1 {
       width: 50%;
-      @include mediaQ($mobile) {
-        width: 60%;
-      }
+      margin: 0;
      img {
       display: block;
       margin: 30px auto 18px auto;
@@ -42,7 +41,7 @@
           align-items: center;
           font-size: 4rem;
           color: $textColorA;
-          padding-right: 30px;
+          padding: 20px 0;
         }
       }
       ul {
@@ -53,24 +52,47 @@
           @include mediaQ($mobile) {
             display: none;
             position: absolute;
-            top: 126px;
+            top: 80px;
             flex-direction: column;
-            background-color:$contrastColorB;
-            width: 150%; //Make sure this doesn't cause overflow on phone
-            border-radius: 0 6px ;
+            background-color:$bgColorA;
+            border-radius: 0 0 6px 6px ;
           }
         }//ul
-        @include mediaQ($mobile) {
+        li {
+          display: flex;
+          align-items: center;
+        }
+        a {
+          padding: 40px;
+          &:hover {
+            color: $textAccent;
+          }
+          @include mediaQ($laptop) {
+            padding: 20px;
+          }
+        }
+
+
+        @include mediaQ($mobile) { //Nav Media Query
           justify-content: center;
-          width: 40%;
-          background-color: $contrastColorA;
-          &:hover { //start nav:hover
-            ul {
+          a {
+            color: $textContrast;
+            padding: 20px 60px;
+            font-size: 1.6rem;
+          }
+
+          &:hover ul { //Display Links on hover
             display: block;
-            }
           }//:hover
         }//nav mediaQ
       } //__nav
+      @include mediaQ($tablet) {
+        flex-direction: column;
+        &__nav, &__h1 {
+          width: 100%;
+          justify-content: center;
+        }
+      }
     }//__top-bar
 
   // HEADER SLIDES
